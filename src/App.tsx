@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import React, { useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
-import About from "./components/About";
 import "./App.css";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Basics from "./components/Basics";
+import Benefits from "./components/Benefits";
+import GetStarted from "./components/GetStarted";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("light");
@@ -47,6 +51,10 @@ const App: React.FC = () => {
     >
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
       <main className="flex-grow">
+        <Hero />
+        <Basics />
+        <GetStarted />
+        <Benefits />
         <About />
       </main>
       <Footer />

@@ -15,19 +15,19 @@ const pages: {
 }[] = [
   {
     name: "Basics",
-    path: "",
+    path: "#basics",
   },
   {
     name: "Get Started",
-    path: "",
+    path: "#getStarted",
   },
   {
     name: "Benefits",
-    path: "",
+    path: "#benefits",
   },
   {
     name: "FAQs",
-    path: "",
+    path: "#faqs",
   },
   {
     name: "Contact",

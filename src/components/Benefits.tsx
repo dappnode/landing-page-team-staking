@@ -1,6 +1,3 @@
-import Button from "./Button";
-import Button2 from "./Button2";
-
 export default function Benefits() {
   const benefits: { value: string; icon: React.ReactElement }[] = [
     {
@@ -17,7 +14,10 @@ export default function Benefits() {
     },
   ];
   return (
-    <div className="flex w-full flex-col gap-10 px-5 lg:flex-row lg:gap-0 lg:px-20">
+    <div
+      className="flex w-full flex-col gap-10 px-5 lg:flex-row lg:gap-0 lg:px-20"
+      id="benefits"
+    >
       <div className="flex  flex-col justify-center  gap-10 lg:w-1/2">
         <div className="flex flex-col gap-5 lg:gap-10">
           <h3>Empower</h3>
@@ -32,7 +32,7 @@ export default function Benefits() {
         <div className="flex flex-col gap-10">
           {benefits.map((benefit, i) => {
             return (
-              <div className="flex flex-row items-center">
+              <div className="flex flex-row items-center" key={i}>
                 {benefit.icon}
                 <p className="pl-5 text-lg lg:text-xl">{benefit.value}</p>
               </div>

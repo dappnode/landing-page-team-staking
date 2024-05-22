@@ -29,6 +29,7 @@ export default function GetStarted() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
+      id="getStarted"
     >
       <h3>Staking, simplified</h3>
       <div className="flex flex-col lg:flex-row">

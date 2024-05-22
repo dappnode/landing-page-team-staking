@@ -9,6 +9,7 @@ export default function Basics() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
+      id="basics"
     >
       <div className="flex h-[700px] items-center justify-center bg-slate-300">
         {" "}

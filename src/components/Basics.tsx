@@ -5,7 +5,7 @@ import Button2 from "./Button2";
 export default function Basics() {
   return (
     <motion.div
-      className=" my-40 flex  w-full flex-col gap-20 px-20 text-center"
+      className="flex w-full flex-col gap-20 px-5 text-center lg:px-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -15,14 +15,14 @@ export default function Basics() {
         image placeholder
       </div>
       <div className="flex h-2/5 flex-col items-center justify-center gap-10">
-        <p className="text-2xl font-bold">
-          Unlock the Power of Staking with Team Staking
-        </p>
-        <h2 className="text-5xl leading-[4rem]">
-          A Complete Modular Solution <br />
-          Provided by Team Staking
-        </h2>
-        <p className="w-1/2 text-xl leading-10">
+        <div className="flex flex-col gap-5 lg:gap-10">
+          <h3>Unlock the Power of Staking with Team Staking</h3>
+          <h2>
+            A Complete Modular Solution <br />
+            Provided by Team Staking
+          </h2>
+        </div>
+        <p className="leading-10 lg:w-2/3 xl:w-1/2">
           Team Staking offers a comprehensive solution for teams and communities
           looking to start staking on Ethereum. Our full stack of operations
           includes everything you need, from hardware to ETH procurement, along

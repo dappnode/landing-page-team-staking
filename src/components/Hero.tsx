@@ -6,15 +6,13 @@ import Button2 from "./Button2";
 export default function Hero() {
   return (
     <motion.div
-      className=" h-[80vh] "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex h-full flex-row ">
-        <div className="flex w-1/2 flex-col justify-center gap-10 px-20">
-          {" "}
-          <h1 className="text-6xl leading-[5rem] ">
+      <div className="flex h-full flex-col xl:flex-row">
+        <div className="flex flex-col justify-center gap-8 px-5 lg:w-5/6 lg:px-20 xl:w-1/2 xl:py-32">
+          <h1>
             Everything you need to start staking now. <br />
             <span className="text-dappnodePurple"> Do It Yourself</span>, but
             with our support.
@@ -31,7 +29,7 @@ export default function Hero() {
             <Button2>Sign Up</Button2>
           </div>
         </div>
-        <div className="flex w-1/2 items-center justify-center bg-slate-300">
+        <div className="mt-20 flex flex-1 items-center justify-center bg-slate-300 p-32 xl:mt-0 xl:w-1/2">
           {" "}
           placeholder image
         </div>

@@ -25,35 +25,33 @@ export default function GetStarted() {
 
   return (
     <motion.div
-      className=" my-40 flex  w-full flex-col gap-5 px-20"
+      className=" flex  w-full flex-col gap-5 px-5 lg:gap-10 lg:px-20 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <p className="text-2xl font-bold">Staking, simplified</p>
-      <div className=" flex flex-row">
-        <div className="flex w-1/2 flex-col gap-5">
-          <h2 className="text-5xl leading-[4rem]">
-            Get started with Team Staking
-          </h2>
+      <h3>Staking, simplified</h3>
+      <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col gap-5 lg:w-1/2">
+          <h2>Get started with Team Staking</h2>
           <div className="flex flex-row gap-5">
             <Button>Learn More</Button>
             <Button2>Sign Up</Button2>
           </div>
         </div>
-        <div className="flex w-1/2 flex-col gap-5 pl-10">
+        <div className="flex flex-col gap-5 pt-10 lg:w-1/2 lg:pl-10 lg:pt-0">
           {steps.map((step, i) => {
             return (
-              <div key={i} className="flex flex-row gap-10">
+              <div key={i} className="flex flex-row gap-5 lg:gap-10">
                 <div className="flex flex-col items-center gap-5">
                   <div>{step.icon}</div>
                   {i < steps.length - 1 && (
                     <div className="h-36 w-1 rounded-md bg-dappnodePurple"></div>
                   )}
                 </div>
-                <div className="flex flex-col gap-3 text-2xl">
+                <div className="flex flex-col lg:gap-3">
                   <p className="font-bold">Step {i + 1}:</p>
-                  <p className="text-xl">{step.value}</p>
+                  <p>{step.value}</p>
                 </div>
               </div>
             );

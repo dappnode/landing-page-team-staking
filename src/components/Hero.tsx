@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import Button from "./Button";
 import Button2 from "./Button2";
 
@@ -10,7 +9,7 @@ export default function Hero() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex h-full flex-col xl:flex-row">
+      <div className="mt-10 flex h-full flex-col lg:mt-0 xl:flex-row">
         <div className="flex flex-col justify-center gap-8 px-5 lg:w-5/6 lg:px-20 xl:w-1/2 xl:py-32">
           <h1>
             Everything you need to start staking now. <br />

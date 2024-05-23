@@ -18,12 +18,12 @@ export default function Benefits() {
       className="flex w-full flex-col gap-10 px-5 lg:flex-row lg:gap-0 lg:px-20"
       id="benefits"
     >
-      <div className="flex  flex-col justify-center  gap-10 lg:w-1/2">
+      <div className="flex  flex-col justify-center  gap-10 lg:w-1/2 lg:pr-10">
         <div className="flex flex-col gap-5 lg:gap-10">
           <h3>Empower</h3>
           <h2>Unlock the Full Potential of Staking</h2>
         </div>
-        <p className="leading-10 lg:pr-10">
+        <p className="leading-10">
           At Team Staking, we design customized staking solutions tailored to
           your specific needs. With our full accompaniment and support, you'll
           never have to navigate the staking process alone. Benefit from

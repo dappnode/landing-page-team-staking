@@ -71,7 +71,6 @@ export default function FAQs() {
           return <div key={i}>{FaqCard(faq)}</div>;
         })}
       </div>
-      ;
     </div>
   );
 }
@@ -80,7 +79,7 @@ function FaqCard(faq: faq) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="flex w-full cursor-pointer flex-col gap-5 border-t-4 border-dappnodePurple py-10"
+      className="flex w-full cursor-pointer flex-col gap-5 border-t-4 border-dappnodeGrey1 py-10 dark:border-dappnodeBgDarkHeaderFooter"
       onClick={() => {
         setIsOpen(!isOpen);
       }}

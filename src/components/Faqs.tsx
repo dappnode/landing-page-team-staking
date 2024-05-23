@@ -6,7 +6,7 @@ interface faq {
   answer: string;
 }
 
-export default function FAQs() {
+export default function Faqs() {
   const faqs: faq[] = [
     {
       question: "What is Ethereum staking?",

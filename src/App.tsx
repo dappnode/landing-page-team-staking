@@ -8,7 +8,7 @@ import Benefits from "./components/Benefits";
 import GetStarted from "./components/GetStarted";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import FAQs from "./components/FAQs";
+import Faqs from "./components/Faqs";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("light");
@@ -56,7 +56,7 @@ const App: React.FC = () => {
         <Basics />
         <GetStarted />
         <Benefits />
-        <FAQs />
+        <Faqs />
         <About />
       </main>
       <Footer />

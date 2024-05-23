@@ -8,6 +8,7 @@ import Benefits from "./components/Benefits";
 import GetStarted from "./components/GetStarted";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import FAQs from "./components/FAQs";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("light");
@@ -50,11 +51,12 @@ const App: React.FC = () => {
       }
     >
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
-      <main className="flex-grow">
+      <main className="flex flex-1 flex-col gap-24 lg:gap-36 xl:gap-52">
         <Hero />
         <Basics />
         <GetStarted />
         <Benefits />
+        <FAQs />
         <About />
       </main>
       <Footer />

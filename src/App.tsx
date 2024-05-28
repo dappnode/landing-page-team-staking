@@ -1,14 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { FiArrowUp } from "react-icons/fi";
-import "./App.css";
-import About from "./components/About";
+import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
-import Basics from "./components/Basics";
-import Benefits from "./components/Benefits";
-import GetStarted from "./components/GetStarted";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Faqs from "./components/Faqs";
+import { FiArrowUp } from "react-icons/fi";
+import About from "./components/About";
+import "./App.css";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("light");
@@ -52,18 +47,13 @@ const App: React.FC = () => {
     >
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
       <main className="flex flex-1 flex-col gap-24 lg:gap-36 xl:gap-52">
-        <Hero />
-        <Basics />
-        <GetStarted />
-        <Benefits />
-        <Faqs />
         <About />
       </main>
       <Footer />
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-24 right-10 cursor-pointer rounded-full bg-purple-500 p-2 text-white transition-colors duration-300 ease-in-out hover:bg-purple-700 "
+          className="fixed bottom-24 right-3 cursor-pointer rounded-full bg-purple-500 p-2 text-white transition-colors duration-300 ease-in-out hover:bg-purple-700 md:right-10"
         >
           <FiArrowUp className="text-4xl" />
         </button>

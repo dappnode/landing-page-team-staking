@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import { FiArrowUp } from "react-icons/fi";
 import "./App.css";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Basics from "./components/Basics";
-import Benefits from "./components/Benefits";
-import GetStarted from "./components/GetStarted";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Faqs from "./components/Faqs";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("light");
@@ -51,14 +45,7 @@ const App: React.FC = () => {
       }
     >
       <Navbar theme={theme} onThemeToggle={toggleTheme} />
-      <main className="flex flex-1 flex-col gap-24 lg:gap-36 xl:gap-52">
-        <Hero />
-        <Basics />
-        <GetStarted />
-        <Benefits />
-        <Faqs />
-        <About />
-      </main>
+      <main className="flex flex-1 flex-col gap-24 lg:gap-36 xl:gap-52"></main>
       <Footer />
       {showScrollTop && (
         <button

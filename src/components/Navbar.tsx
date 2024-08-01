@@ -14,24 +14,16 @@ const pages: {
   path: string;
 }[] = [
   {
-    name: "Basics",
-    path: "#basics",
+    name: "About",
+    path: "#about",
   },
   {
-    name: "Get Started",
-    path: "#getStarted",
+    name: "About",
+    path: "#about",
   },
   {
-    name: "Benefits",
-    path: "#benefits",
-  },
-  {
-    name: "FAQs",
-    path: "#faqs",
-  },
-  {
-    name: "Contact",
-    path: "",
+    name: "About",
+    path: "#about",
   },
   {
     name: "About",
@@ -68,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
                 className="mr-4 h-12"
               />
               <span className="mt-3 text-xl font-bold text-gray-900 dark:text-white lg:text-2xl">
-                Team Staking
+                Landing Page
               </span>
             </div>
           </div>
@@ -78,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({ onThemeToggle, theme }) => {
         <div className="flex w-full flex-row items-center justify-center  pr-10 lg:hidden">
           <img src="dappnode-logo-only.png" alt="Logo" className="mr-4 h-8" />
           <span className="mt-3 text-xl font-bold text-gray-900 dark:text-white lg:text-2xl">
-            Team Staking
+            Landing Page
           </span>
         </div>
 
